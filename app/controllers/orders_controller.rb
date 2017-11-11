@@ -2,7 +2,6 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
-    # @order = Order.all.order(created_at: :desc)
   end
 
   def create

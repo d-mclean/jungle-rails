@@ -26,9 +26,6 @@
       <% for line_item in @order.line_items do %>
         <%= render 'item', line_item: line_item %>
       <% end %>
-      <%-# order.each do |email, details| -%>
-        <%-# = render 'item', email: email -%>
-      <%-# end -%>
     </tbody>
     <tfoot>
       <tr>
