@@ -53,6 +53,12 @@ class OrdersController < ApplicationController
       end
     end
     order.save!
+
+    # NotifierMailer.welcome(params[:stripeEmail]).deliver_now # sends the email
+    mail = NotifierMailer.order_receipt(params[:stripeEmail])      # => an ActionMailer::MessageDelivery object
+    mail.deliver_now  # generates and sends the email now
+    # mail.deliver_later  # generate email locally instead
+
     order
   end
 
