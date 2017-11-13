@@ -26,8 +26,10 @@ Rails.application.routes.draw do
   get '/register' => 'users#new'
   post '/users' => 'users#create'
 
-  resources :product do
-    resources :reviews, only: [:create]
+  resources :products do
+    resources :reviews, only: [:create] do
+      delete :remove
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
