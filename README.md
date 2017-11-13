@@ -1,7 +1,26 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of learning Rails.
 
+## Features
+1. Browse products, add them to your shopping cart and then checkout!
+2. Login system for managing customers and administrators.
+3. Admin features for adding, editing and removing products/categories!
+4. Admin Dashboard (pending).
+5. Process credit cards via Stripe!
+
+## Screenshots
+Homepage - browse products or sort by category!
+!["Screenshot of the homepage"](https://github.com/d-mclean/jungle-rails/blob/master/docs/homepage.png)
+
+Checkout via the shopping cart!
+!["Screenshot of the shopping cart"](https://github.com/d-mclean/jungle-rails/blob/master/docs/checkout.png)
+
+Rate products or read other reviews!
+!["Screenshot of adding a review"](https://github.com/d-mclean/jungle-rails/blob/master/docs/rateproducts.png)
+
+Product information updates when sold out!
+!["Screenshot of product sold out"](https://github.com/d-mclean/jungle-rails/blob/master/docs/soldout.png)
 
 ## Setup
 
