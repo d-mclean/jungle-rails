@@ -28,6 +28,14 @@ Capybara.javascript_driver = :poltergeist
 # require only the support files necessary.
 #
  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+ 
+ require "capybara/rails"
+ require "capybara/rspec"
+ require "capybara/poltergeist" # Add this line to require poltergeist
+ 
+ # Specs flagged with `js: true` will use Capybara's JS driver. Set
+ # that JS driver to :poltergeist
+ Capybara.javascript_driver = :poltergeist
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
